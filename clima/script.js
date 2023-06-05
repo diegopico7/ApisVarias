@@ -30,6 +30,8 @@ const ciudadNombre = data.name;
 const temperatura = data.main.temp
 const descripcion = data.weather[0].description
 const humedad = data.main.humidity
+const pais = data.sys.country
+
 
 let dif = temperatura-diferenciaKelvin
 console.log(dif)
@@ -43,11 +45,15 @@ const descripcionInfo = document.createElement("p")
 descripcionInfo.textContent= `El tiempo esta ${descripcion}`
 const humedadInfo = document.createElement("p")
 humedadInfo.textContent=`la humedad es de ${humedad}%`
+const paisInfo = document.createElement("p")
+paisInfo.textContent=pais
 
 datosClima.appendChild(ciudadTitulo);
+datosClima.appendChild(paisInfo)
 datosClima.appendChild(temperaturaInfo);
 datosClima.appendChild(descripcionInfo);
 datosClima.appendChild(humedadInfo);
+
 
 }
 
