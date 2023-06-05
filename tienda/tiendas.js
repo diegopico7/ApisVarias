@@ -69,4 +69,27 @@ categoria1.innerHTML = ShowCategoria1;
 
 }
 
+function showFetch1(){
+    fetch(`${urlBase}`)
+    .then(data=>data.json())
+    .then(data=>AllProductos1(data))
+    }
+    
+    showFetch1();
 
+    function AllProductos1(data) {
+        console.log(data)
+        const tarjetasList = data.map(d =>{
+           console.log(d.title)
+           const div = document.getElementById("card1")
+           const h2 = document.createElement('h2')
+           const pri = document.createElement('p')
+           h2.textContent = d.title
+        pri.textContent = d.price
+       div.appendChild(h2)
+       div.appendChild(pri) 
+
+        })
+        tarjetasList;
+     
+    }
