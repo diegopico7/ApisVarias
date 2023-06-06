@@ -24,9 +24,9 @@ align-items: center;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 25px;
+    gap: 5px;
 }
 
 .card1 {
@@ -37,4 +37,39 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
+gap: 5px;
+
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+
+}
+.tit {
+    text-align: center;
+    color: aliceblue;
+
+}
+.pri {
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 1.3rem;
+    color: rgb(187, 87, 87);
+}
+
+.desc {
+    font-family: sans-serif;
+    background-color: rgb(133, 229, 233);
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    color: rgb(63, 62, 62);
+}
+
+.cat {
+    font: 600;
+    font-size: 1.2rem;
+
 }
